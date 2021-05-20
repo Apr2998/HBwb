@@ -1,50 +1,18 @@
-@keyframes loading-loader{
-    
-    25%{
-        border-top:12px solid #f3f3f3;
-    border-bottom: 12px solid #f3f3f3;
-    border-left: 12px solid #f3f3f3;
-    border-right: 12px solid #444444;
-    }
-    50%{
-        border-top:12px solid #f3f3f3;
-    border-right: 12px solid #f3f3f3;
-    border-left: 12px solid #f3f3f3;
-    border-bottom: 12px solid #444444;
-    }
-    75%{
-        border-top:12px solid #f3f3f3 ;
-    border-bottom: 12px solid #f3f3f3;
-    border-right: 12px solid #f3f3f3;
-    border-left: 12px solid #444444;
-    }
-    100%{
-        border-top:12px solid #444444;
-    border-bottom: 12px solid #f3f3f3;
-    border-left: 12px solid #f3f3f3;
-    border-right: 12px solid #f3f3f3;
-    }
-    
-
-
-}
-
-.loader-symbol{
-    position:absolute;
-    top:50%;
-    bottom:50%;
-    left:50%;
-    right:50%;
-    margin:auto;
-    width: 70px;
+div{
     height: 70px;
-    border-top:12px solid #f3f3f3;
-    border-bottom: 12px solid #f3f3f3;
-    border-left: 12px solid #f3f3f3;
-    border-right: 12px solid #f3f3f3;
+    width: 70px;
+    border: 12px solid #f3f3f3;
     border-radius: 50%;
-    animation-name: loading-loader;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    border-top-color:#444444 ;
+    margin: 0px auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
+.loader{
+    animation: spin 1s linear infinite;
+}     
+
+@keyframes spin{
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+} 
